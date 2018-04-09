@@ -38,8 +38,22 @@ public class FTC_setup_Sensors
         hwMap = ahwMap;
 
         //Init all sensors
-        //TODO: add documentation to init different sensors
 
+        /* Touch Sensors
+        *  /name/ = (ModernRoboticsTouchSensor) hwmap.touchSensor.get("/Phone Name/");
+        */
+
+
+
+        /* Optical distance sensor / light or dark sensor
+        *  /name/ = hwMap.colorSensor.get("/Phone name/");
+        *  /name/.enbledLed(false); (Turns off the led)
+        */
+
+
+
+        //There are many different sensors to init most you will need to do the following:
+        // /name/ = hwMap./sensor class name/.get("/Phone name/"); (This should work in most cases)
     }
 
 }
